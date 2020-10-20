@@ -1,26 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="images/icon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/icon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/icon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/icon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/icon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/icon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/icon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/icon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/icon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/icon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/icon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/icon/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/icon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="themes/film.css" />
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-    <title>我的標題</title>
+    <title>film</title>
 </head>
 
-<body>
+<body style="text-align:center;">
     <!-- main page -->
-    <div data-role="page" id="page00">
+    <div data-role="page" id="home">
 
         <div data-role="header">
-            <h1>My Title</h1>
+            <h1>Watch films at HOME</h1>
         </div><!-- /header -->
 
         <div role="main" class="ui-content">
-            <p>Hello world This is the main page.</p>
-            <a href="#page01">Forward to PAGE01</a>
-            <a href="#page02">Forward to PAGE02</a>
+            <img src="images/loadshow.jpg" alt="">
+            <p>There are tons of significant films in the world.</p>
+            <p>It is time to watch them at HOME.</p>
+            <p>Here are THREE must-watch films in each genres for you. </p>
+            <p>CHECK IT OUT!</p>
+            <a href="#aboutme" data-role="button">ABOUT ME</a>
+            <div data-role="controlgroup" data-type="horizontal">
+                <a href="#comedy" data-transition="slidedown" data-role="button"
+                    class="ui-btn ui-icon-star ui-btn-icon-left">GO to COMEDY</a>
+                <a href="#romance" data-transition="slidedown" data-role="button"
+                    class="ui-btn ui-icon-heart ui-btn-icon-left">GO to ROMANCE</a>
+                <a href="#drama" data-transition="slidedown" data-role="button"
+                    class="ui-btn ui-icon-user ui-btn-icon-left">GO to DRAMA</a>
+                <a href="#music" data-transition="slidedown" data-role="button"
+                    class="ui-btn ui-icon-audio ui-btn-icon-left">GO to MUSIC</a>
+            </div>
+
         </div><!-- /content -->
 
         <div data-role="footer" data-position="fixed">
@@ -29,17 +64,159 @@
 
     </div><!-- /page -->
 
+    <!-- about me -->
+    <div data-role="page" data-dialog="true" id="aboutme">
+        <div data-role="header">
+            <h1>我是一个对话框！</h1>
+        </div>
+
+        <div data-role="main" class="ui-content">
+            <p>I am a film lover since I was a little. Watch over 200 films in a year.</p>
+            <p>I would love to share with you some of my favourite films. Hope you like them ;)</p>
+            <a href="#home" data-role="button" class="ui-btn ui-icon-home ui-btn-icon-left">Back to HOME</a>
+        </div>
+    </div>
 
     <!-- 1st page -->
-    <div data-role="page" id="page01">
+    <div data-role="page" id="comedy">
 
         <div data-role="header">
-            <h1>My Title</h1>
+            <h1>COMEDY</h1>
         </div><!-- /header -->
 
         <div role="main" class="ui-content">
-            <p>Hello world This is the first page.</p>
-            <a href="#page00">Back to PAGE00</a>
+            <div class="content">
+                <p>When you feel sad, when you feel lonley, COMEDY is always the best choice makes you HAPPY!</p>
+
+                <div class="info">
+
+                    <div class="infocard">
+                        <div data-role="panel" id="myPanel">
+                            <h3>Directed by</h3>
+                            <P>
+                            <ul style="list-style: none; padding-left: 0;">
+                                <li>Jonathan Dayton</li>
+                                <li>Valerie Faris</li>
+                            </ul>
+                            </P>
+
+                            <h3>Written by</h3>
+                            <p>Michael Arndt</p>
+
+                            <h3>Starring</h3>
+                            <P>
+                            <ul style="list-style: none; padding-left: 0;">
+                                <li>Greg Kinnear</li>
+                                <li>Steve Carell</li>
+                                <li>Toni Collette</li>
+                                <li>Paul Dano</li>
+                                <li>Abigail Breslin</li>
+                                <li>Alan Arkin</li>
+                            </ul>
+                            </P>
+
+                            <h3>Released</h3>
+                            <p>2006</p>
+
+                            <a href="#comedy" data-rel="close"
+                                class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">CLOSE</a>
+                        </div>
+
+                        <div data-role="main" class="ui-content">
+                            <a href="#myPanel" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Little Miss
+                                Sunshine</a>
+                        </div>
+
+                        <img src="images/Little_miss_sunshine.jpg" alt="Little_miss_sunshine">
+                        <p>Together, the motley six-member family treks from Albuquerque to the Little Miss Sunshine
+                            pageant in Redondo Beach, California, to fulfill the deepest wish of 7-year-old Olive, an
+                            ordinary little girl with big dreams. </p>
+                    </div>
+
+                    <div class="infocard">
+
+                        <div data-role="panel" id="myPanel">
+                            <h3>Directed by</h3>
+                            <P>
+                                Wes Anderson
+                            </P>
+
+                            <h3>Written by</h3>
+                            <p>Wes Anderson</p>
+
+                            <h3>Starring</h3>
+                            <P>
+                            <ul style="list-style: none; padding-left: 0;">
+                                <li>Ralph Fiennes</li>
+                                <li>Tony Revolori</li>
+                                <li>F. Murray Abraham</li>
+                                <li>Adrien Brody</li>
+                                <li>Willem Dafoe</li>
+                                <li>Saoirse Ronan</li>
+                                <li>Tilda Swinton</li>
+                            </ul>
+                            </P>
+
+                            <h3>Released</h3>
+                            <p>2014</p>
+
+                            <a href="#comedy" data-rel="close"
+                                class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">CLOSE</a>
+                        </div>
+
+                        <div data-role="main" class="ui-content">
+                            <a href="#myPanel" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">The Grand Budapest
+                                Hotel</a>
+                        </div>
+
+                        <img src="images/budapest.jpg" alt="The Grand Budapest Hotel">
+                        <p>A writer encounters the owner of an aging high-class hotel, who tells him of his early years
+                            serving as a lobby boy in the hotel's glorious years under an exceptional concierge.</p>
+                    </div>
+
+                    <div class="infocard">
+                        <div data-role="panel" id="myPanel">
+                            <h3>Directed by</h3>
+                            <P>
+                                Jim Jarmusch
+                            </P>
+
+                            <h3>Written by</h3>
+                            <p> Jim Jarmusch</p>
+
+                            <h3>Starring</h3>
+                            <P>
+                            <ul style="list-style: none; padding-left: 0;">
+                                <li>Winona Ryder</li>
+                                <li>Gena Rowlands</li>
+                                <li>Giancarlo Esposito</li>
+                                <li>Isaach De Bankolé</li>
+                                <li>Roberto Benigni</li>
+                                <li>Matti Pellonpää</li>
+                            </ul>
+                            </P>
+
+                            <h3>Released</h3>
+                            <p>1991</p>
+
+                            <a href="#comedy" data-rel="close"
+                                class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">CLOSE</a>
+                        </div>
+
+                        <div data-role="main" class="ui-content">
+                            <a href="#myPanel" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Night on Earth</a>
+                        </div>
+
+                        <img src="images/Nightonearth.jpg" alt="Night on Earth">
+                        <p>An anthology of 5 different cab drivers in 5 American and European cities and their
+                            remarkable fares on the same eventful night.</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <a href="#home" data-transition="slideup" data-role="button"
+                class="ui-btn ui-icon-home ui-btn-icon-left">Back to HOME</a>
         </div><!-- /content -->
 
         <div data-role="footer" data-position="fixed">
@@ -49,17 +226,447 @@
     </div><!-- /page -->
 
     <!-- 2nd page -->
-    <div data-role="page" id="page02">
+    <div data-role="page" id="romance">
 
         <div data-role="header">
-            <h1>My Title</h1>
+            <h1>ROMANCE</h1>
         </div><!-- /header -->
 
         <div role="main" class="ui-content">
-            <p>Hello world This is the second page.</p>
-            <a href="#page00">Back to PAGE00</a>
+            <div class="content">
+                <p> I dropped three love comedy here. You may see sweet dream in romance films.</p>
+
+                <div class="info">
+
+                    <div class="infocard">
+
+                        <div data-role="panel" id="myPanel">
+                            <h3>Directed by</h3>
+                            <P>
+                                Michel Gondry
+                            </P>
+
+                            <h3>Written by</h3>
+                            <p>Michel Gondry</p>
+
+                            <h3>Starring</h3>
+                            <P>
+                            <ul style="list-style: none; padding-left: 0;">
+                                <li>Jim Carrey</li>
+                                <li>GKate Winslet</li>
+                                <li>Kirsten Dunst</li>
+                                <li>Mark Ruffalo</li>
+                                <li>Elijah Wood</li>
+                                <li>Tom Wilkinson</li>
+                            </ul>
+                            </P>
+
+                            <h3>Released</h3>
+                            <p>2004</p>
+
+                            <a href="#romance" data-rel="close"
+                                class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">CLOSE</a>
+                        </div>
+
+                        <div data-role="main" class="ui-content">
+                            <a href="#myPanel" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Eternal Sunshine Of
+                                The Spotless Mind</a>
+                        </div>
+
+                        <img src="images/eternal.jpg" alt="eternal">
+                        <p>After a painful breakup, Clementine (Kate Winslet) undergoes a procedure to erase memories of
+                            her former boyfriend Joel (Jim Carrey) from her mind. When Joel discovers that Clementine is
+                            going to extremes to forget their relationship, he undergoes the same procedure and slowly
+                            begins to forget the woman that he loved.</p>
+                    </div>
+
+                    <div class="infocard">
+
+                        <div data-role="panel" id="myPanel">
+                            <h3>Directed by</h3>
+                            <P>
+                                Jon Turteltaub
+                            </P>
+
+                            <h3>Written by</h3>
+                            <p>
+                            <ul style="list-style: none; padding-left: 0;">
+                                <li>Daniel G. Sullivan</li>
+                                <li>Fredric Lebow</li>
+                            </ul>
+                            </p>
+
+                            <h3>Starring</h3>
+                            <P>
+                            <ul style="list-style: none; padding-left: 0;">
+                                <li>Sandra Bullock</li>
+                                <li>Bill Pullman</li>
+                                <li>KPeter Gallagher</li>
+                                <li>Peter Boyle</li>
+                                <li>Glynis Johns</li>
+                                <li>Jack Warden</li>
+                            </ul>
+                            </P>
+
+                            <h3>Released</h3>
+                            <p>1995</p>
+
+                            <a href="#romance" data-rel="close"
+                                class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">CLOSE</a>
+                        </div>
+
+                        <div data-role="main" class="ui-content">
+                            <a href="#myPanel" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">While You Were
+                                Sleeping</a>
+                        </div>
+
+                        <img src="images/Whilesleeping.jpg" alt="While You Were Sleeping">
+                        <p>A hopelessly romantic Chicago Transit Authority token collector is mistaken for the fiancée
+                            of a coma patient.</p>
+                    </div>
+
+                    <div class="infocard">
+
+                        <div data-role="panel" id="myPanel">
+                            <h3>Directed by</h3>
+                            <P>
+                                Jean-Pierre Jeunet
+                            </P>
+
+                            <h3>Written by</h3>
+                            <p>
+                                Jean-Pierre Jeunet
+                            </p>
+
+                            <h3>Starring</h3>
+                            <P>
+                            <ul style="list-style: none; padding-left: 0;">
+                                <li>Audrey Tautou</li>
+                                <li>Mathieu Kassovitz</li>
+                                <li>Rufus</li>
+                                <li>Lorella Cravotta</li>
+                                <li>Serge Merlin</li>
+                                <li>Jamel Debbouze</li>
+                            </ul>
+                            </P>
+
+                            <h3>Released</h3>
+                            <p>2001</p>
+
+                            <a href="#romance" data-rel="close"
+                                class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">CLOSE</a>
+                        </div>
+
+                        <div data-role="main" class="ui-content">
+                            <a href="#myPanel" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Amélie</a>
+                        </div>
+
+                        <img src="images/Amelie.jpg" alt="Amélie">
+                        <p>Amélie is an innocent and naive girl in Paris with her own sense of justice. She decides to
+                            help those around her and, along the way, discovers love.</p>
+                    </div>
+
+                </div>
+            </div>
+            <a href="#home" data-transition="slideup" data-role="button"
+                class="ui-btn ui-icon-home ui-btn-icon-left">Back to HOME</a>
         </div><!-- /content -->
 
+        <div data-role="footer" data-position="fixed">
+            <h4>Copyright &copy; Tomoko Ogura</h4>
+        </div><!-- /footer -->
+
+    </div><!-- /page -->
+
+    <!-- 3rd page -->
+    <div data-role="page" id="drama">
+
+        <div data-role="header">
+            <h1>DRAMA</h1>
+        </div><!-- /header -->
+
+        <div role="main" class="ui-content">
+            <div class="content">
+                <p>You will see your drama through these films.</p>
+
+                <div class="info">
+
+                    <div class="infocard">
+
+                        <div data-role="panel" id="myPanel">
+                            <h3>Directed by</h3>
+                            <P>
+                                Lasse Hallström
+                            </P>
+
+                            <h3>BASED ON</h3>
+                            <p>
+                                What's Eating Gilbert Grape by Peter Hedges
+                            </p>
+
+                            <h3>Starring</h3>
+                            <P>
+                            <ul style="list-style: none; padding-left: 0;">
+                                <li>Johnny Depp</li>
+                                <li>Juliette Lewis</li>
+                                <li>Mary Steenburgen</li>
+                                <li>Leonardo DiCaprio</li>
+                                <li>John C. Reilly</li>
+                            </ul>
+                            </P>
+
+                            <h3>Released</h3>
+                            <p>1993</p>
+
+                            <a href="#drama" data-rel="close"
+                                class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">CLOSE</a>
+                        </div>
+
+                        <div data-role="main" class="ui-content">
+                            <a href="#myPanel" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">What's Eating
+                                Gilbert Grape
+                            </a>
+                        </div>
+
+                        <h3>What's Eating Gilbert Grape</h3>
+                        <img src="images/gilbert.jpg" alt="gilbert">
+                        <p>A young man in a small Midwestern town struggles to care for his mentally-disabled younger
+                            brother and morbidly obese mother while attempting to pursue his own happiness.</p>
+                    </div>
+
+                    <div class="infocard">
+
+                        <div data-role="panel" id="myPanel">
+                            <h3>Directed by</h3>
+                            <P>
+                                Chris Kelly
+                            </P>
+
+                            <h3>Written by</h3>
+                            <p>
+                                Chris Kelly
+                            </p>
+
+                            <h3>Starring</h3>
+                            <P>
+                            <ul style="list-style: none; padding-left: 0;">
+                                <li>Jesse Plemons</li>
+                                <li>Molly Shannon</li>
+                                <li>Bradley Whitford</li>
+                                <li>Maude Apatow</li>
+                                <li>Madisen Beaty</li>
+                                <li>John Early</li>
+                            </ul>
+                            </P>
+
+                            <h3>Released</h3>
+                            <p>2016</p>
+
+                            <a href="#drama" data-rel="close"
+                                class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">CLOSE</a>
+                        </div>
+
+                        <div data-role="main" class="ui-content">
+                            <a href="#myPanel" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Other People</a>
+                        </div>
+                        <img src="images/other.jpg" alt="Other People">
+                        <p>A struggling comedy writer, fresh off a breakup and in the midst of the worst year of his
+                            life, returns to Sacramento to care for his dying mother.</p>
+                    </div>
+
+                    <div class="infocard">
+
+                        <div data-role="panel" id="myPanel">
+                            <h3>Directed by</h3>
+                            <P>
+                                Rob Reiner
+                            </P>
+
+                            <h3>Based on</h3>
+                            <p>
+                                The Body
+                                by Stephen King
+                            </p>
+
+                            <h3>Starring</h3>
+                            <P>
+                            <ul style="list-style: none; padding-left: 0;">
+                                <li>Wil Wheaton</li>
+                                <li>River Phoenix</li>
+                                <li>Rufus</li>
+                                <li>Corey Feldman</li>
+                                <li>Jerry O'Connell</li>
+                                <li>Kiefer Sutherland</li>
+                            </ul>
+                            </P>
+
+                            <h3>Released</h3>
+                            <p>1986</p>
+
+                            <a href="#drama" data-rel="close"
+                                class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">CLOSE</a>
+                        </div>
+
+                        <div data-role="main" class="ui-content">
+                            <a href="#myPanel" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">STAND BY ME</a>
+                        </div>
+
+                        <img src="images/standbyme.jpg" alt="STAND BY ME">
+                        <p>After the death of one of his friends, a writer recounts a childhood journey with his friends
+                            to find the body of a missing boy.</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <a href="#home" data-transition="slideup" data-role="button"
+                class="ui-btn ui-icon-home ui-btn-icon-left">Back to HOME</a>
+        </div><!-- /content -->
+        <div data-role="footer" data-position="fixed">
+            <h4>Copyright &copy; Tomoko Ogura</h4>
+        </div><!-- /footer -->
+
+    </div><!-- /page -->
+    <!-- 4th page -->
+    <div data-role="page" id="music">
+
+        <div data-role="header">
+            <h1>MUSIC</h1>
+        </div><!-- /header -->
+
+        <div role="main" class="ui-content">
+            <div class="content">
+                <p>Here are films focused on music. After watch them, you wanna listen music again and again.</p>
+
+                <div class="info">
+
+                    <div class="infocard">
+
+                        <div data-role="panel" id="myPanel">
+                            <h3>Directed by</h3>
+                            <P>
+                                John Carney
+                            </P>
+
+                            <h3>Written by</h3>
+                            <p>
+                                John Carney
+                            </p>
+
+                            <h3>Starring</h3>
+                            <P>
+                            <ul style="list-style: none; padding-left: 0;">
+                                <li>Keira Knightley</li>
+                                <li>Mark Ruffalo</li>
+                                <li>Hailee Steinfeld</li>
+                                <li>Adam Levine</li>
+                            </ul>
+                            </P>
+
+                            <h3>Released</h3>
+                            <p>2014</p>
+
+                            <a href="#music" data-rel="close"
+                                class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">CLOSE</a>
+                        </div>
+
+                        <div data-role="main" class="ui-content">
+                            <a href="#myPanel" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Begin Again</a>
+                        </div>
+
+                        <img src="images/BeginAgain.jpg" alt="Begin Again">
+                        <p>A chance encounter between a down-and-out music-business executive and a young
+                            singer-songwriter, new to Manhattan, turns into a promising collaboration between the two
+                            talents.</p>
+                    </div>
+
+                    <div class="infocard">
+
+                        <div data-role="panel" id="myPanel">
+                            <h3>Directed by</h3>
+                            <P>
+                                Danny Boyle
+                            </P>
+
+                            <h3>Written by</h3>
+                            <p>
+                                Jack Barth
+                            </p>
+
+                            <h3>Starring</h3>
+                            <P>
+                            <ul style="list-style: none; padding-left: 0;">
+                                <li>Himesh Patel</li>
+                                <li>Lily James</li>
+                                <li>Joel Fry</li>
+                                <li>Ed Sheeran</li>
+                                <li>Kate McKinnon</li>
+                            </ul>
+                            </P>
+
+                            <h3>Released</h3>
+                            <p>2019</p>
+
+                            <a href="#music" data-rel="close"
+                                class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">CLOSE</a>
+                        </div>
+
+                        <div data-role="main" class="ui-content">
+                            <a href="#myPanel" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">YESTERDAY</a>
+                        </div>
+
+                        <h3>YESTERDAY</h3>
+                        <img src="images/yesterday.jpg" alt="YESTERDAY">
+                        <p>A struggling musician realizes he's the only person on Earth who can remember The Beatles
+                            after waking up in an alternate timeline where they never existed.</p>
+                    </div>
+
+                    <div class="infocard">
+
+                        <div data-role="panel" id="myPanel">
+                            <h3>Directed by</h3>
+                            <P>
+                                Nobuhiro Yamashita
+                            </P>
+
+                            <h3>Written by</h3>
+                            <p>
+                                Nobuhiro Yamashita
+                            </p>
+
+                            <h3>Starring</h3>
+                            <P>
+                            <ul style="list-style: none; padding-left: 0;">
+                                <li>Bae Doona</li>
+                                <li>Aki Maeda</li>
+                                <li>Yu Kashii</li>
+                                <li>Shiori Sekine</li>
+                            </ul>
+                            </P>
+
+                            <h3>Released</h3>
+                            <p>2005</p>
+
+                            <a href="#music" data-rel="close"
+                                class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">CLOSE</a>
+                        </div>
+
+                        <div data-role="main" class="ui-content">
+                            <a href="#myPanel" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Linda Linda
+                                Linda</a>
+                        </div>
+
+                        <img src="images/linda.jpg" alt="Linda Linda Linda">
+                        <p>Japanese teenagers (Aki Maeda, Yû Kashii, Shiori Sekine) recruit a Korean exchange student to
+                            become the singer of their rock band.</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <a href="#home" data-transition="slideup" data-role="button"
+                class="ui-btn ui-icon-home ui-btn-icon-left">Back to HOME</a>
+        </div><!-- /content -->
         <div data-role="footer" data-position="fixed">
             <h4>Copyright &copy; Tomoko Ogura</h4>
         </div><!-- /footer -->
